@@ -10,7 +10,7 @@ function openURL(url){
 }
 function getQuote(){ //funtion to fetch data from website
   $.ajax({
-           url:'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand',cache:false,
+           url:'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand',cache:false,
            success: function(r) {
            var currentQuote="", currentAuthor="";
            currentQuote = r[0].content;
